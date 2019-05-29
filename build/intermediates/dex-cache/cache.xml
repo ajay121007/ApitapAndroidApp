@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\app\build\intermediates\exploded-aar\com.jsibbold\zoomage\1.1.0-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4d9e973ce005ae994c326ac8e41eb2db04b3ce1b">
+        <dex dex="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jsibbold-zoomage-1.1.0-SNAPSHOT_06c4edcb34605f2b90be2699089a9173b013a456\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\app\libs\org.apache.http.legacy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5320fd78dd7f154e586970d4f02befc9b58432aa">
+        <dex dex="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\org.apache.http.legacy_38826fd34e90721bebed928c38c66ad7bb4697ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\ratioimageviewlib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="366b7b809f89639c90eb99674d14eb2424a49275">
+        <dex dex="F:\Apitap(New)\Apitap\Apitap\APITAP-Android\app\build\intermediates\transforms\dex\debug\folders\1000\4\classes_f2e0a9679560aeabd0a2f06fdba1578953d165ad\classes.dex" />
+    </item>
+
+</items>

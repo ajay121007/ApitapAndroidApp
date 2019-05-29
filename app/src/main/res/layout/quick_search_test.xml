@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/select_language_title"
+            android:layout_height="0dp"
+            android:layout_marginTop="0.1dp"
+            android:background="@color/colorBlue"
+            android:layout_weight="0.13">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Quick Search"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/btn_select_language"
+            android:layout_marginStart="2dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/language_spinner_recycler"
+            android:layout_marginEnd="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.061">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbl_search"
+                android:text="Search Criteria"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlue" />
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/select_language"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/lbl_search"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.07"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.26"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:text="Looking for?"
+                    android:textColor="@color/colorBlue"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.38"
+                    android:paddingLeft="2dp"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_marginEnd="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product or services"
+                    android:textColor="@color/colorBlue"
+                    />
+
+                <CheckBox
+                    android:id="@+id/imageView_message"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.06"
+                    android:paddingRight="5dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_checkbox"
+                    android:button="@android:color/transparent"  />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.20"
+                    android:paddingRight="2dp"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_marginEnd="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="Business"
+                    android:textColor="@color/colorBlue"
+                    />
+
+                <CheckBox
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.06"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_checkbox"
+                    android:button="@android:color/transparent"
+                     />
+
+
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/btn_select"
+            android:layout_marginStart="2dp"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/language_spinner_recycler"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="0.62"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please choose a location to search near"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:id="@+id/lbl_search_loc"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlue"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/l"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lbl_search_loc"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:dropDownVerticalOffset="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.80"
+                    android:spinnerMode="dropdown"
+                    android:text="Select Address"
+                    android:textColor="#617291" />
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="0.20"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down_arrow"
+                    android:layout_marginRight="5dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or enter a address to look nearby"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:layout_below="@+id/l"
+                android:id="@+id/lbl_se_loc"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlue"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/txt_1"
+                android:padding="3dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/border"
+                android:layout_below="@+id/lbl_se_loc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please type in word you are looking for"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:layout_below="@+id/txt_1"
+                android:id="@+id/lbl_se"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorBlue"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/search"
+                android:padding="3dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/border"
+                android:layout_below="@+id/lbl_se"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/btn_select_lang"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/language_spinner"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.11">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/cancel"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_blue_border_blue_"
+                android:text="Cancel" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/submit"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:background="@drawable/back_blue_border_blue_"
+                android:text="Done"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+             android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

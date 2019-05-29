@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "F:\\Apitap(New)\\Apitap\\Apitap\\APITAP-Android\\ratioimageviewlib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 202,
+                    "endColumn": 51,
+                    "endOffset": 249
+                },
+                "from": {
+                    "file": "F:\\Apitap(New)\\Apitap\\Apitap\\APITAP-Android\\ratioimageviewlib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 202,
+                        "endColumn": 51,
+                        "endOffset": 249
+                    }
+                }
+            }
+        ]
+    }
+]

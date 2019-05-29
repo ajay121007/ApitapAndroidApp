@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/descriptions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="7dp"
+        android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_special_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Special offer"
+            android:textColor="@color/colorBlue"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            />
+
+        <LinearLayout
+            android:id="@+id/sortby_business"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/sortby"
+            android:gravity="end"
+            android:textAlignment="center"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_special_offer"
+            android:layout_height="match_parent"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_sort"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"></Spinner>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sort_type"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:layout_toLeftOf="@+id/sortby"
+            android:layout_toRightOf="@+id/tv_special_offer"
+            android:textColor="@color/simple_grey" />
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/sortby"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/sort_by"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sort"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="end"
+                style="@android:style/TextAppearance.Small"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/title_ll"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:background="@drawable/rounded_bg_blue">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Title"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:id="@+id/title"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+
+        </ListView>
+        <com.github.rahatarmanahmed.cpv.CircularProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pocket"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

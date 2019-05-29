@@ -1,0 +1,8 @@
+int attr adjustWidth 0x7f010001
+int attr groupId 0x7f010000
+int dimen activity_horizontal_margin 0x7f020000
+int string app_name 0x7f040000
+int style AppBaseTheme 0x7f030000
+int[] styleable RatioImageView { 0x7f010000, 0x7f010001 }
+int styleable RatioImageView_adjustWidth 1
+int styleable RatioImageView_groupId 0
